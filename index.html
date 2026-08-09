@@ -45,6 +45,8 @@
       }
     }
     </script>
+
+
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.lime.min.css">
     <link rel="stylesheet" href="style.css">
@@ -483,7 +485,7 @@
         <div class="grid">
             <article style="background-color: #ffffff; border: 1px solid #d1d5db; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 0;">
                 <header style="padding-top: 1rem; background-color: #f3f4f6; border-bottom: 1px solid #d1d5db; color: #111827;">
-                    <h4 style="margin: 0; color: #111827;">Contact & Policy</h4>
+                    <h4 style="margin: 0; color: #111827;">Contact</h4>
                 </header>
                 <div style="padding: 0.5rem 0.75rem;">
                     <p style="margin-bottom: 0.4rem;"><strong>Email:</strong> <a href="mailto:andremtutoring@gmail.com" style="color: #1e3a8a; text-decoration: underline;">andremtutoring@gmail.com</a></p>
@@ -491,8 +493,8 @@
                         Monday-Friday: 4PM - 11PM<br>
                         Weekends: 9AM - 11PM
                     </p>
-                    <p style="margin-bottom: 0.25rem;"><strong>Reschedule:</strong> Up to 3 days prior.</p>
-                    <p style="margin-bottom: 0.25rem;"><strong>Cancellations:</strong> With less than 3 days 				notice are non-refundable.</p>
+                    <p style="margin-bottom: 0.25rem;">See availabilities below.</p>
+
 
                     </p>
                 </div>
@@ -523,29 +525,45 @@
         </div>
     </div> 
 
-    <div id="schedule-session" style="width: 100%; margin-top: 3rem; overflow: hidden; box-sizing: border-box; border-radius: 12px; border: 1px solid #d1d5db;">
-        <div style="background-color: #f3f4f6; padding: 1.25rem 2rem; border-bottom: 1px solid #d1d5db;">
-            <h3 style="margin: 0; color: #111827; font-size: 1.4rem; font-weight: 700;">Schedule Your Session</h3>
-            <p style="margin: 0.25rem 0 0 0; color: #111827; font-size: 0.95rem;">Select an available time slot below to lock in your lesson.</p>
+<div style="display: flex; gap: 1.5rem; flex-wrap: wrap; width: 100%; margin-top: 3rem; box-sizing: border-box; align-items: stretch;">
+
+    <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #d1d5db; border-radius: 12px; overflow: hidden; box-sizing: border-box; display: flex; flex-direction: column;">
+        <div style="background-color: #f3f4f6; padding: 1.25rem 1.5rem; border-bottom: 1px solid #d1d5db;">
+            <h3 style="margin: 0 !important; color: #111827 !important; font-size: 1.3rem; font-weight: 700;">Policy & Pre-Session Info</h3>
         </div>
+        <div style="padding: 1.5rem; color: #111827 !important; flex: 1;">
+ <p style="margin-bottom: 0.5rem;"><strong>Reschedule:</strong> Up to  days prior to session.</p>                                
+<p style="margin-bottom: 1rem;"><strong>Cancellations:</strong> With less than 3 days 				notice are non-refundable.</p>
+<p style="margin-bottom: 0.5rem;"><strong>Session Requirements:</strong> </p>
 
-<article style="padding: 0rem; border: none; border-radius: 0; background-color: #ffffff; margin: 0;">
-  <iframe 
+            <ul style="margin: 0; padding-left: 1.2rem; color: #4b5563 !important; font-size: 0.9rem; line-height: 1.6;">
+                <li style="color: #4b5563 !important;">Lessons are conducted online via <strong style="color: #111827 !important;">Zoom</strong>.</li>
+                <li style="color: #4b5563 !important;">A working microphone is essential, using a camera is encouraged.</li>
+                <li style="color: #4b5563 !important;">Zoom link will be emailed automatically upon confirmation.</li>
+                <li style="color: #4b5563 !important;">To maximise our time, students are recommended to bring specific topics, school homework, or questions, however, I also have my own study materials.</li>
+            </ul>
+        </div>
+    </div>
 
-        src="https://calendly.com/andremtutoring/60min?hide_landing_page_details=1" 
+    <div style="flex: 1.5; min-width: 320px; background-color: #fafafa; border: 1px solid #d1d5db; border-radius: 12px; overflow: hidden; box-sizing: border-box; display: flex; flex-direction: column;">
+        <div style="background-color: #f3f4f6; padding: 1.25rem 1.5rem; border-bottom: 1px solid #d1d5db;">
+            <h3 style="margin: 0 !important; color: #111827 !important; font-size: 1.3rem; font-weight: 700;">View Availabilities</h3>
+        </div>
+        <div style="padding: 3rem; margin-top: -2.7rem; box-sizing: border-box; flex: 1;">
+            <iframe 
+                src="calendar-widget.html" 
+                width="100%" 
+                height="500px" 
+                style="border: none; border-radius: 8px; display: block; margin: 0; padding: 0;"
+                scrolling="no">
+            </iframe>
+        </div>
+    </div>
 
-        loading="lazy" 
-
-        width="100%" 
-
-        height="730" 
-
-        style="min-width: 320px; height: 730px; width: 100%; border: none;">
-
-    </iframe> 
-
+</div>
 
 </article>
+
         
     </div>
 </section>

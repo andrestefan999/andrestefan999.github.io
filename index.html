@@ -154,6 +154,11 @@
             scroll-margin-top: -80px !important;
         }
 
+        #availabilities {
+            scroll-margin-top: -68px !important;
+        }
+
+
         #schedule-session {
             scroll-margin-top: 15px !important;
         }
@@ -551,7 +556,7 @@
 
         <div style="flex: 1.5; min-width: 320px; background-color: #f9fafc; border: 1px solid #d1d5db; border-radius: 12px; overflow: hidden; box-sizing: border-box; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
             <div style="background-color: #f3f4f6; padding: 1.25rem 1.5rem; border-bottom: 1px solid #d1d5db;">
-                <h3 style="margin: 0 !important; color: #111827 !important; font-size: 1.3rem; font-weight: 700;">View resource</h3>
+                <h3 style="margin: 0 !important; color: #111827 !important; font-size: 1.3rem; font-weight: 700;">View Availabilities</h3>
             </div>
             <div style="padding: 0rem; box-sizing: border-box; flex: 1;">
                 <iframe 
@@ -675,27 +680,6 @@
                 behavior: 'smooth'
             });
         });
-    </script>
-    <script>
-        let bounceActive = false;
-        window.addEventListener('wheel', (e) => {
-            const isAtBottom = (window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 5;
-            if (isAtBottom && e.deltaY > 0 && !bounceActive) {
-                bounceActive = true;
-                const pageElements = document.querySelectorAll('body > :not(header):not(script)');
-                pageElements.forEach(el => {
-                    el.style.transition = 'transform 0.25s cubic-bezier(0.25, 1, 0.5, 1)';
-                    el.style.transform = 'translateY(-20px)';
-                });
-                setTimeout(() => {
-                    pageElements.forEach(el => {
-                        el.style.transition = 'transform 0.7s cubic-bezier(0.175, 0.885, 0.42, 1)';
-                        el.style.transform = 'translateY(0)';
-                    });
-                    setTimeout(() => { bounceActive = false; }, 700);
-                }, 220);
-            }
-        }, { passive: true });
     </script>
 </body>
 </html>

@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Clean up any stale modal elements before initializing
+    const existingOverlay = document.querySelector('.calendar-modal-overlay');
+    if (existingOverlay) existingOverlay.remove();
+
     const calendarEl = document.getElementById('calendar');
+    if (!calendarEl) return;
 
     // Inject Modal Styles
     const styleTag = document.createElement('style');
@@ -15,12 +20,14 @@ document.addEventListener('DOMContentLoaded', function() {
             justify-content: center;
             align-items: center;
             opacity: 0;
+            visibility: hidden;
             pointer-events: none;
-            transition: opacity 0.2s ease;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
         }
         .calendar-modal-overlay.visible {
-            opacity: 1;
-            pointer-events: auto;
+            opacity: 1 !important;
+            visibility: visible !important;
+            pointer-events: auto !important;
         }
         .calendar-modal-card {
             background: #ffffff;
@@ -122,21 +129,31 @@ document.addEventListener('DOMContentLoaded', function() {
     modalOverlay.innerHTML = `
         <div class="calendar-modal-card">
             <div class="calendar-modal-header">
-                <h3 id="modal-date-title">Schedule Breakdown</h3>
-                <button class="calendar-modal-close" id="modal-close-btn">&times;</button>
+                <h3 class="modal-date-title">Schedule Breakdown</h3>
+                <button class="calendar-modal-close">&times;</button>
             </div>
-            <div class="calendar-modal-slots" id="modal-slots-list"></div>
+            <div class="calendar-modal-slots"></div>
         </div>
     `;
     document.body.appendChild(modalOverlay);
 
-    const modalTitle = document.getElementById('modal-date-title');
-    const modalSlotsList = document.getElementById('modal-slots-list');
-    const modalCloseBtn = document.getElementById('modal-close-btn');
+    const modalTitle = modalOverlay.querySelector('.modal-date-title');
+    const modalSlotsList = modalOverlay.querySelector('.calendar-modal-slots');
+    const modalCloseBtn = modalOverlay.querySelector('.calendar-modal-close');
 
-    function closeModal() { modalOverlay.classList.remove('visible'); }
+    function closeModal() { 
+        modalOverlay.classList.remove('visible'); 
+    }
+
     modalCloseBtn.addEventListener('click', closeModal);
-    modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); });
+    modalOverlay.addEventListener('click', (e) => { 
+        if (e.target === modalOverlay) closeModal(); 
+    });
+
+    // Close on Escape key press
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+    });
 
     function getFormattedDateStr(dateObj) {
         if (!dateObj) return '';
@@ -175,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const isWeekend = (dayOfWeek === 0 || dayOfWeek === 6);
         const startHour = isWeekend ? 9 : 16;
-        const endHour = 23; // Includes 10:30 PM - 11:00 PM slot
+        const endHour = 23; 
 
         let slotsHtml = '';
 

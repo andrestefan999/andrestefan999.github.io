@@ -7,9 +7,9 @@
 
     <link rel="canonical" href="https://andremtutoring.com/" />
 
-    <link rel="icon" type="image/svg+xml" href="/Images/logo_4.svg">
-    <link rel="alternate icon" type="image/png" href="/Images/logo.png">
-    <link rel="apple-touch-icon" href="/Images/logo.png">
+    <link rel="icon" type="image/svg+xml" href="Images/logo_2.svg">
+    <link rel="alternate icon" type="image/png" href="Images/logo.png">
+    <link rel="apple-touch-icon" href="Images/logo.png">
 
     <meta name="description" content="📘 Expert online tutoring for NSW HSC Physics, Advanced Maths, and Extension 1 &amp; 2 by a 99.8 ATAR State Ranker. ✨ Book a half-price $30 trial session today.">
 
@@ -45,8 +45,6 @@
       }
     }
     </script>
-
-
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.lime.min.css">
     <link rel="stylesheet" href="style.css">
@@ -141,31 +139,85 @@
             color: #ffffff !important;
         }
 
+        /* --- Dropdown Menu Styling (Solid, Stable, and Separated) --- */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background: transparent;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            background: #ffffff !important;
+            background-color: #ffffff !important;
+            opacity: 1 !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            min-width: 240px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+            z-index: 9999;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            background-color: #ffffff !important;
+            list-style: none !important;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu a {
+            display: block !important;
+            padding: 0.8rem 1.1rem !important;
+            margin: 0 !important;
+            color: #1e293b !important;
+            background-color: #ffffff !important;
+            font-size: 0.9rem !important;
+            font-weight: 500 !important;
+            line-height: 1.4 !important;
+            white-space: nowrap !important;
+            text-decoration: none !important;
+            transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease !important;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f8fafc !important;
+            color: #2e5a2e !important;
+            transform: translateX(3px) !important;
+        }
+
         /* --- Custom Scroll Margin Offsets --- */
-        #contact {
-            scroll-margin-top: 30px !important;
-        }
-
-        #faq {
-            scroll-margin-top: 35px !important;
-        }
-
-        #resources {
-            scroll-margin-top: -80px !important;
-        }
-
-        #availabilities {
-            scroll-margin-top: -68px !important;
-        }
-
-
-        #schedule-session {
-            scroll-margin-top: 15px !important;
-        }
-
-        section, article {
-            scroll-margin-top: 0px !important;
-        }
+        #contact { scroll-margin-top: 30px !important; }
+        #faq { scroll-margin-top: 35px !important; }
+        #resources { scroll-margin-top: -80px !important; }
+        #availabilities { scroll-margin-top: -68px !important; }
+        #schedule-session { scroll-margin-top: 15px !important; }
+        section, article { scroll-margin-top: 0px !important; }
 
         /* --- Tablet & Mobile Styles (Screens smaller than 1024px) --- */
         @media (max-width: 1024px) {
@@ -191,11 +243,10 @@
             }
 
             header nav ul:last-child {
-                display: grid !important;
-                grid-template-columns: repeat(3, 1fr) !important;
-                justify-content: center !important; 
-                justify-items: center !important;   
-                gap: 2px 4px !important;
+                display: flex !important;
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 8px 12px !important;
                 width: 100% !important;
                 text-align: center !important;
                 padding: 0 0.25rem !important;
@@ -204,18 +255,25 @@
             header nav ul:last-child li {
                 margin-right: 0 !important;
                 padding: 0 !important;
-                width: 100% !important;
+                width: auto !important;
             }
             header nav ul:last-child a {
                 display: block !important;
-                font-size: 0.75rem !important;
-                padding: 2px 0 !important;
+                font-size: 0.85rem !important;
+                padding: 2px 4px !important;
                 background-color: transparent !important;
                 text-decoration: none !important;
-                white-space: nowrap !important;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                width: 100% !important;
+            }
+
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                border: none;
+                background: #f8fafc;
+                display: none;
+            }
+            .dropdown:hover .dropdown-menu {
+                display: block;
             }
 
             .mobile-hide-img {
@@ -235,44 +293,46 @@
                 grid-template-columns: 1fr !important;
                 gap: 1.5rem !important;
             }
-
-            #schedule-session div[style*="margin-bottom"] {
-                margin-bottom: -3.5rem !important;
-            }
-            #schedule-session article {
-                padding-top: 4.5rem !important;
-            }
         }
     </style>
 </head>
 <body>
+
 <header class="full-width-nav" style="position: sticky; top: 0; z-index: 1000; background-color: var(--pico-background-color); box-shadow: 0 2px 10px rgba(0,0,0,0.05); width: 100%;">
     <nav class="container" style="padding-top: 0rem; padding-bottom: 0rem; margin-bottom: -15px; margin-top: -15px; min-height: auto;">
         <ul>
             <li style="display: flex; align-items: center; gap: 10px;">
-                <img src="Images/logo_2.svg" style="width: 50px;"> 
-                <h3 style="margin: 0;">Andre Tutoring</h3>
+                <img src="Images/logo_2.svg" alt="Andre Tutoring Logo" style="width: 50px;"> 
+                <h3 style="margin: 0;"><a href="index.html" style="text-decoration: none; color: inherit;">Andre Tutoring</a></h3>
             </li>
         </ul>
-        <ul style="display: flex; list-style: none; padding: 0;">
-            <li style="margin-right: 1.5rem;"><a href="#about-me" class="scroll-to-top">About Me</a></li>
-            <li style="margin-right: 1.5rem;"><a href="#services">Services</a></li>
-            <li style="margin-right: 1.5rem;"><a href="#resources">Resources</a></li>
-            <li style="margin-right: 1.5rem;"><a href="#contact">Contact</a></li>
-            <li style="margin-right: 1.5rem;"><a href="#availabilities">Availabilities</a></li>
-            <li><a href="#faq">FAQ</a></li>
+        <ul style="display: flex; list-style: none; padding: 0; align-items: center;">
+            <li style="margin-right: 1.5rem;"><a href="index.html">Home</a></li>
+            
+	<li style="margin-right: 1.5rem;" class="dropdown">
+                <a href="#" style="text-decoration: none;">Subjects ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/physics/">Physics (HSC)</a></li>
+                    <li><a href="/extension-maths/">Extension Maths</a></li>
+                    <li><a href="/advanced-maths/">Advanced & Standard Maths</a></li>
+                    <li><a href="/junior-maths/">Junior Maths (Yr 7-10)</a></li>
+                </ul>
+            </li>
+
+            <li style="margin-right: 1.5rem;"><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact & Booking</a></li>
         </ul>
     </nav>
 </header>
 
 <div style="width: 100%; overflow: hidden;">
-    <section id="about-me" class="stats" style="position: relative; padding: 2rem 0 !important; margin-top: 1rem; margin-bottom: 0rem !important; background-image: url('Images/landscape.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; width: 100%; box-sizing: border-box;">
+    <section id="about-me" class="stats" style="position: relative; padding: 2rem 0 !important; margin-top: 1rem; margin-bottom: 0rem !important; background-image: url('Images/landscape.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; width: 100%; box-sizing: border-box;">
         <div class="container" style="max-width: 1250px; padding: 0rem 1rem;">
             <div class="glass-panel" style="padding: 3rem 2rem 1.5rem 2rem; border-radius: 16px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);">
                 <h2 style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; color: #2e5a2e;">Meet Your Online Tutor</h2>
                 <div class="grid" style="align-items: center; gap: 3rem; grid-template-columns: 0.8fr 1.2fr;">
                     <div style="text-align: center;">
-                        <img src="Images/Andre.webp" 
+                        <img src="Images/Andre.png" 
                              alt="Andre Mitchell - HSC Physics and Mathematics Tutor in Sydney" 
                              class="profile_image" 
                              fetchpriority="high"
@@ -315,7 +375,7 @@
     </section>
 </div>
 
-<section style="margin-top: -5rem; padding-bottom: 0; width: 100%; overflow: hidden;">
+<section style="margin-top: -5rem; padding-bottom: 3rem; width: 100%; overflow: hidden;">
 <section id="services" class="dark">
         <div class="container">
             <h2>My Tutoring Services</h2>            
@@ -371,87 +431,14 @@
         </div>           
 </section>
 
-<div id="resources" style="display: block; height: 0; margin-top: -100px; padding-top: 60px; visibility: hidden;"></div>
-
-<section style="max-width: 1200px; margin: 3rem auto -1rem auto; padding: 2.5rem 1.5rem; border-radius: 12px; box-sizing: border-box; width: 100%; position: relative; overflow: hidden; background: linear-gradient(135deg, #3b6e3b 0%, #325e4c 50%, #244b4b 100%); border: 1px solid #2e5a5a; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
-    
-    <h2 style="text-align: center; color: #ffffff; font-weight: 700; margin-bottom: 2rem; text-shadow: 0 2px 4px rgba(0,0,0,0.15);">Free HSC Practice Papers</h2>
-    
-    <div class="grid" style="gap: 1.5rem;">
-        <article style="background-color: #ffffff; border: 1px solid #94a3b8; box-shadow: 0 6px 16px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-                <header style="background-color: #f1f5f9; border-bottom: 1px solid #cbd5e1; color: #0f172a; padding: 1rem; text-align: center;">
-                    <strong style="font-size: 1.1rem; color: #0f172a;">Advanced Maths</strong>
-                </header>
-                <p style="padding: 1.25rem 1rem 0.5rem 1rem; color: #334155; margin: 0; text-align: center;">Full HSC style paper.</p>
-            </div>
-            <div style="padding: 1rem; text-align: center;">
-                <a href="Resources/maths-advanced-sample.pdf" 
-                   download="Andre_M_Tutoring_Advanced_Maths_Sample.pdf" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   class="btn-premium" 
-                   style="display: inline-block; width: 100%; box-sizing: border-box;"
-                   onclick="let btn=this; btn.style.pointerEvents='none'; btn.style.opacity='0.6'; btn.innerText='Downloading...'; setTimeout(()=>{ btn.style.pointerEvents='auto'; btn.style.opacity='1'; btn.innerText='Download PDF'; }, 3000);">
-                    Download PDF
-                </a>
-            </div>
-        </article>
-
-        <article style="background-color: #ffffff; border: 1px solid #94a3b8; box-shadow: 0 6px 16px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-                <header style="background-color: #f1f5f9; border-bottom: 1px solid #cbd5e1; color: #0f172a; padding: 1rem; text-align: center;">
-                    <strong style="font-size: 1.1rem; color: #0f172a;">Extension 1</strong>
-                </header>
-                <p style="padding: 1.25rem 1rem 0.5rem 1rem; color: #334155; margin: 0; text-align: center;">Full HSC style paper.</p>
-            </div>
-            <div style="padding: 1rem; text-align: center;">
-                <a href="Resources/maths-ext1-sample.pdf" 
-                   download="Andre_M_Tutoring_Extension1_Maths_Sample.pdf" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   class="btn-premium" 
-                   style="display: inline-block; width: 100%; box-sizing: border-box;"
-                   onclick="let btn=this; btn.style.pointerEvents='none'; btn.style.opacity='0.6'; btn.innerText='Downloading...'; setTimeout(()=>{ btn.style.pointerEvents='auto'; btn.style.opacity='1'; btn.innerText='Download PDF'; }, 3000);">
-                    Download PDF
-                </a>
-            </div>
-        </article>
-
-        <article style="background-color: #ffffff; border: 1px solid #94a3b8; box-shadow: 0 6px 16px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-                <header style="background-color: #f1f5f9; border-bottom: 1px solid #cbd5e1; color: #0f172a; padding: 1rem; text-align: center;">
-                    <strong style="font-size: 1.1rem; color: #0f172a;">HSC Physics</strong>
-                </header>
-                <p style="padding: 1.25rem 1rem 0.5rem 1rem; color: #334155; margin: 0; text-align: center;">Full HSC style paper.</p>
-            </div>
-            <div style="padding: 1rem; text-align: center;">
-                <a href="Resources/physics-sample.pdf" 
-                   download="Andre_M_Tutoring_Physics_Sample.pdf" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   class="btn-premium" 
-                   style="display: inline-block; width: 100%; box-sizing: border-box;"
-                   onclick="let btn=this; btn.style.pointerEvents='none'; btn.style.opacity='0.6'; btn.innerText='Downloading...'; setTimeout(()=>{ btn.style.pointerEvents='auto'; btn.style.opacity='1'; btn.innerText='Download PDF'; }, 3000);">
-                    Download PDF
-                </a>
-            </div>
-        </article>
-    </div>
-
-    <p style="text-align: center; margin-top: 0rem; margin-bottom: 0; font-size: 0.95rem; color: #e2f0e2;">
-        <em>Want more full trial exams and worked solutions? Book a session to get access to more.</em>
-    </p>
-</section>
-
-<div style="width: 100%; overflow: hidden; margin-top: 3rem;">
+<div style="width: 100%; overflow: hidden; margin-top: -3rem;">
     <section style="position: relative; padding: 5rem 0 !important; background-image: url('Images/beach.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; width: 100%; box-sizing: border-box;">
         <div class="container" style="max-width: 1200px; padding: 0 1rem;">
             <div class="glass-panel" style="padding: 2.5rem 2rem; border-radius: 16px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);">
                 <div class="grid testimonial-grid" style="align-items: center; gap: 3rem; grid-template-columns: 0.6fr 1.4fr;">
                     
                     <div class="mobile-hide-img" style="max-width: 260px; width: 100%; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(46,90,46,0.12); display: flex;">
-                        <img src="Images/Maths.webp" loading="lazy" alt="Mathematics Concepts Graphic" style="width: 100%; height: auto; object-fit: cover; margin: 0rem;">
+                        <img src="Images/Maths.jpg" loading="lazy" alt="Mathematics Concepts Graphic" style="width: 100%; height: auto; object-fit: cover; margin: 0rem;">
                     </div>
                     
                     <div style="display: flex; flex-direction: column; justify-content: center; gap: 2rem; width: 100%;">
@@ -613,11 +600,10 @@
 
             <details name="faq-accordion" style="background-color: #ffffff; border: 1px solid #b0b8c4; border-left: 4px solid #2563eb; border-radius: 8px; padding: 1.25rem 1.5rem; margin: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
                 <summary style="font-weight: 700; cursor: pointer; color: #0f172a; font-size: 1.05rem;">
-                    Do you cover Year 11 and Year 12 Physics?
+                    Do you offer in-person tutoring?
                 </summary>
                 <p style="margin-top: 0.85rem; margin-bottom: 0; color: #334155; line-height: 1.6; padding-left: 0.75rem; border-left: 3px solid #2563eb; font-size: 0.95rem;">
-                    Yes, I teach both the <strong>Year 11 Preliminary Physics</strong> modules 
-                    and the <strong>Year 12 HSC Physics</strong> curriculum.
+                    No, all my tutoring services are <strong>strictly online</strong>. I currently live in Queensland for university, making in person tutoring not possible.
                 </p>
             </details>
 

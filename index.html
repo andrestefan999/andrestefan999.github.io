@@ -327,14 +327,14 @@
 
 <div style="width: 100%; overflow: hidden;">
     <section id="about-me" class="stats" style="position: relative; padding: 2rem 0 !important; margin-top: 1rem; margin-bottom: 0rem !important; background-image: url('Images/landscape.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; width: 100%; box-sizing: border-box;">
-        <div class="container" style="max-width: 1250px; padding: 0rem 1rem;">
+	<div class="container" style="max-width: 1250px; padding: 0rem 1rem;">
             <div class="glass-panel" style="padding: 3rem 2rem 1.5rem 2rem; border-radius: 16px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);">
                 <h2 style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; color: #2e5a2e;">Meet Your Online Tutor</h2>
                 <div class="grid" style="align-items: center; gap: 3rem; grid-template-columns: 0.8fr 1.2fr;">
                     <div style="text-align: center;">
                         <img src="Images/Andre.png" 
                              alt="Andre Mitchell - HSC Physics and Mathematics Tutor in Sydney" 
-                             class="profile_image" 
+                             class="profile_image hover-lift" 
                              fetchpriority="high"
                              width="180" 
                              height="180"
@@ -380,7 +380,7 @@
         <div class="container">
             <h2>My Tutoring Services</h2>            
             <div class="grid">
-                <article>
+                <article class="hover-lift">
                     <header><strong>Maths Advanced</strong></header>
                     <p>Year 11 & 12</p>
                     <ul>
@@ -389,7 +389,7 @@
                         <li>Statistics and Probability</li>
                     </ul>
                 </article>
-                <article>
+                <article class="hover-lift">
                     <header><strong>Extension 1 & 2</strong></header>
                     <p>Year 11 & 12</p>
                     <ul>
@@ -399,7 +399,7 @@
                         <li>Advanced Calculus & Integration</li>
                     </ul>
                 </article>
-                <article>                      
+                <article class="hover-lift">                      
                     <header><strong>HSC Physics</strong></header>
                     <p>Years 11 & 12</p>
                     <ul>
@@ -408,7 +408,7 @@
                         <li>Modern Physics and Quantum Theory</li>
                     </ul>
                 </article>
-                <article>
+                <article class="hover-lift">
                     <header><strong>Standard Maths</strong></header>
                     <p>Year 11 & 12</p>
                     <ul>
@@ -417,7 +417,7 @@
                         <li>Algebra and Measurement</li>
                     </ul>
                 </article>
-                <article>
+                <article class="hover-lift">
                     <header><strong>Yrs 7–10 Maths</strong></header>
                     <p>Junior High School Foundations</p>
                     <ul>
@@ -476,7 +476,7 @@
         </hgroup>
         <div class="grid">
             
-            <article style="background-color: #ffffff; border: 1px solid #d1d5db; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 0;">
+            <article class="hover-lift" style="background-color: #ffffff; border: 1px solid #d1d5db; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 0;">
                 <header style="padding-top: 1rem; background-color: #f3f4f6; border-bottom: 1px solid #d1d5db; color: #111827;">
                     <h4 style="margin: 0; color: #111827;">Contact</h4>
                 </header>
@@ -490,7 +490,7 @@
                 </div>
             </article>
             
-            <article style="background-color: #ffffff; border: 1px solid #d1d5db; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 0;">
+            <article class="hover-lift" style="background-color: #ffffff; border: 1px solid #d1d5db; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 0;">
                 <header style="padding-top: 1rem; background-color: #f3f4f6; border-bottom: 1px solid #d1d5db; color: #111827;">
                     <h4 style="margin: 0; color: #111827;">Pricing & Payment</h4>
                 </header>
@@ -509,7 +509,7 @@
                 </div>
             </article>        
             
-            <article style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid #d1d5db; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 0; min-height: 100%;">
+            <article class="hover-lift" style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid #d1d5db; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 0; min-height: 100%;">
                 <img src="Images/Setup.jpg" loading="lazy" alt="Online Tutoring Workspace" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;">
             </article>
         </div>
@@ -559,12 +559,6 @@
     </div>
 </section>
 
-</article>
-
-        
-    </div>
-</section>
-
 <section id="faq" style="max-width: 1200px; margin: 3rem auto; padding: 0 1rem; width: 100%; box-sizing: border-box;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; align-items: stretch;">
         
@@ -593,7 +587,7 @@
                     Do you have a valid working with children?
                 </summary>
                 <p style="margin-top: 0.85rem; margin-bottom: 0; color: #334155; line-height: 1.6; padding-left: 0.75rem; border-left: 3px solid #2563eb; font-size: 0.95rem;">
-                    Yes, I have a valid NSW working with children check <strong>WWC Number: WWC2417426E</strong>.
+                    Yes, I have a valid NSW Working With Children Check.
                 </p>
             </details>
 
@@ -633,7 +627,10 @@
     <style>
         @keyframes arrowBounce {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-3px); }
+            50% { transform: translateY(-5px); }
+        }
+        .back-to-top-btn {
+            transition: all 0.25s ease-in-out !important;
         }
         .back-to-top-btn:hover {
             transform: translateY(-3px) !important;
@@ -646,7 +643,7 @@
     </style>
 
     <div style="display: flex; justify-content: center; margin-bottom: 1rem; margin-top: -1.7rem;">
-        <a href="#" class="back-to-top-btn" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 700; color: #ffffff; background-color: #2563eb; padding: 0.45rem 1rem; border-radius: 20px; text-decoration: none; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25); transition: all 0.25s ease-in-out;">
+        <a href="#" class="back-to-top-btn" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 700; color: #ffffff; background-color: #2563eb; padding: 0.45rem 1rem; border-radius: 20px; text-decoration: none; box-shadow: 0 articlpx 10px rgba(37, 99, 235, 0.25);">
             <span class="arrow-icon" style="font-size: 0.9rem; line-height: 1; display: inline-block;">↑</span> Back to top
         </a>
     </div>
@@ -657,14 +654,98 @@
         © 2026 Andre Tutoring. All rights reserved.
     </p>
 </footer>
+
 <script>
-        document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+    document.querySelector('.back-to-top-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
         });
-    </script>
+    });
+</script>
+
+<script>
+class Accordion {
+  constructor(el) {
+    this.el = el;
+    this.summary = el.querySelector('summary');
+    this.animation = null;
+    this.isClosing = false;
+    this.isExpanding = false;
+    this.summary.addEventListener('click', (e) => this.onClick(e));
+  }
+
+  onClick(e) {
+    e.preventDefault();
+    this.el.style.overflow = 'hidden';
+    if (this.isClosing || !this.el.open) {
+      this.open();
+    } else if (this.isExpanding || this.el.open) {
+      this.shrink();
+    }
+  }
+
+  shrink() {
+    this.isClosing = true;
+    const startHeight = `${this.el.offsetHeight}px`;
+    const endHeight = `${this.summary.offsetHeight}px`;
+
+    if (this.animation) this.animation.cancel();
+
+    this.animation = this.el.animate({
+      height: [startHeight, endHeight]
+    }, {
+      duration: 300,
+      easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+    });
+
+    this.animation.onfinish = () => this.onAnimationFinish(false);
+    this.animation.oncancel = () => this.isClosing = false;
+  }
+
+  open() {
+    this.el.style.height = `${this.el.offsetHeight}px`;
+    this.el.open = true;
+    window.requestAnimationFrame(() => this.expand());
+  }
+
+  expand() {
+    this.isExpanding = true;
+    const startHeight = `${this.el.offsetHeight}px`;
+    
+    // Dynamically measure true natural height to prevent overshooting
+    this.el.style.height = 'auto';
+    const endHeight = `${this.el.offsetHeight}px`;
+    this.el.style.height = startHeight;
+
+    if (this.animation) this.animation.cancel();
+
+    this.animation = this.el.animate({
+      height: [startHeight, endHeight]
+    }, {
+      duration: 300,
+      easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+    });
+
+    this.animation.onfinish = () => this.onAnimationFinish(true);
+    this.animation.oncancel = () => this.isExpanding = false;
+  }
+
+  onAnimationFinish(open) {
+    this.el.open = open;
+    this.animation = null;
+    this.isClosing = false;
+    this.isExpanding = false;
+    this.el.style.height = '';
+    this.el.style.overflow = '';
+  }
+}
+
+document.querySelectorAll('details').forEach((el) => {
+  new Accordion(el);
+});
+</script>
+
 </body>
 </html>

@@ -369,14 +369,6 @@ section.theme-services-blue {
     padding-top: 1rem !important; 
 }
 
-/* --- Animations --- */
-details[open] summary ~ * {
-    animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-4px); }
-    100% { opacity: 1; transform: translateY(0); }
 }/* --- Root & Global Settings --- */
 html {
     scroll-behavior: smooth !important;
@@ -757,3 +749,71 @@ details[open] summary ~ * {
     0% { opacity: 0; transform: translateY(-4px); }
     100% { opacity: 1; transform: translateY(0); }
 }
+
+/* --- Animations --- */
+details[open] summary ~ * {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-4px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Added Smooth Bouncing Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust distance of the bounce here */
+    }
+}
+
+.bouncing-element {
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+/* --- Smooth Hover Lift Effect --- */
+.hover-lift {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px) !important; /* Adjust how high it lifts on hover */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* --- Smooth Native Accordion (No HTML Changes Required) --- */
+details {
+    display: grid;
+    grid-template-rows: auto 0fr;
+    transition: grid-template-rows 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+}
+
+details[open] {
+    grid-template-rows: auto 1fr;
+}
+
+details summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details > p {
+    overflow: hidden;
+    margin-top: 0.85rem !important; /* Retains your spacing without jumping */
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+details[open] > p {
+    opacity: 1;
+}
+

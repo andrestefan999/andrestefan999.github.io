@@ -261,7 +261,7 @@
         <div class="container">
             <h2 style="color: #0c4a6e;">HSC Physics Curriculum &amp; Modules</h2>            
             <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                <article>
+                <article class="hover-lift">
                     <header><strong>Year 11 Preliminary Physics</strong></header>
                     <p>Building Core Foundations</p>
                     <ul>
@@ -269,9 +269,10 @@
                         <li>Newton's Laws of Motion</li>
                         <li>Work, Energy, and Power</li>
                         <li>Waves and Thermodynamics</li>
+			<li>Electricity and Magnetism</li>
                     </ul>
                 </article>
-                <article>
+                <article class="hover-lift">
                     <header><strong>Year 12 HSC Physics</strong></header>
                     <p>Advanced Core Modules</p>
                     <ul>
@@ -280,8 +281,8 @@
                         <li>The Light Universe (Wave/Particle Model)</li>
                         <li>From the Universe to the Atom</li>
                     </ul>
-                </article>
-                <article>                    
+                </article class="hover-lift">
+                <article class="hover-lift">                    
                     <header><strong>Exam &amp; Depth Study Support</strong></header>
                     <p>Maximising ATAR Marks</p>
                     <ul>
@@ -304,7 +305,7 @@
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto;">
         
-        <article style="background-color: #ffffff; border: 1px solid #bae6fd; box-shadow: 0 6px 16px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;">
+        <article  class="hover-lift" style="background-color: #ffffff; border: 1px solid #bae6fd; box-shadow: 0 6px 16px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;">
             <div>
                 <header style="background-color: #f0f9ff; border-bottom: 1px solid #bae6fd; color: #0c4a6e; padding: 1rem; text-align: center;">
                     <strong style="font-size: 1.1rem; color: #0c4a6e;">Free Sample Paper</strong>
@@ -324,7 +325,7 @@
             </div>
         </article>
 
-        <article style="background-color: #ffffff; border: 1px solid #bae6fd; box-shadow: 0 6px 16px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;">
+        <article  class="hover-lift" style="background-color: #ffffff; border: 1px solid #bae6fd; box-shadow: 0 6px 16px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;">
             <div>
                 <header style="background-color: #f0f9ff; border-bottom: 1px solid #bae6fd; color: #0c4a6e; padding: 1rem; text-align: center;">
                     <strong style="font-size: 1.1rem; color: #0c4a6e;">External Resource Hubs</strong>
@@ -384,7 +385,7 @@
         </hgroup>
         <div class="grid">
             
-            <article style="background-color: #ffffff; border: 1px solid #7dd3fc; box-shadow: 0 4px 12px rgba(3,105,161,0.08); margin-bottom: 0;">
+            <article class="hover-lift" style="background-color: #ffffff; border: 1px solid #7dd3fc; box-shadow: 0 4px 12px rgba(3,105,161,0.08); margin-bottom: 0;">
                 <header style="padding-top: 1rem; background-color: #e0f2fe; border-bottom: 1px solid #bae6fd; color: #0c4a6e;">
                     <h4 style="margin: 0; color: #0c4a6e;">Contact</h4>
                 </header>
@@ -398,7 +399,7 @@
                 </div>
             </article>
             
-            <article style="background-color: #ffffff; border: 1px solid #7dd3fc; box-shadow: 0 4px 12px rgba(3,105,161,0.08); margin-bottom: 0;">
+            <article class="hover-lift" style="background-color: #ffffff; border: 1px solid #7dd3fc; box-shadow: 0 4px 12px rgba(3,105,161,0.08); margin-bottom: 0;">
                 <header style="padding-top: 1rem; background-color: #e0f2fe; border-bottom: 1px solid #bae6fd; color: #0c4a6e;">
                     <h4 style="margin: 0; color: #0c4a6e;">Pricing & Payment</h4>
                 </header>
@@ -417,7 +418,7 @@
                 </div>
             </article>        
             
-            <article style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid #7dd3fc; box-shadow: 0 4px 12px rgba(3,105,161,0.08); margin-bottom: 0; min-height: 100%;">
+            <article class="hover-lift" style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid #7dd3fc; box-shadow: 0 4px 12px rgba(3,105,161,0.08); margin-bottom: 0; min-height: 100%;">
                 <img src="../Images/Setup.jpg" loading="lazy" alt="Online Physics Tutoring Workspace" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;">
             </article>
         </div>
@@ -534,7 +535,10 @@
     <style>
         @keyframes arrowBounce {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-3px); }
+            50% { transform: translateY(-5px); }
+        }
+        .back-to-top-btn {
+            transition: all 0.25s ease-in-out !important;
         }
         .back-to-top-btn:hover {
             transform: translateY(-3px) !important;
@@ -546,8 +550,9 @@
         }
     </style>
 
+
     <div style="display: flex; justify-content: center; margin-bottom: 1rem; margin-top: -1.7rem;">
-        <a href="#" class="back-to-top-btn" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 700; color: #ffffff; background-color: #2563eb; padding: 0.45rem 1rem; border-radius: 20px; text-decoration: none; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25); transition: all 0.25s ease-in-out;">
+        <a href="#" class="back-to-top-btn" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 700; color: #ffffff; background-color: #2563eb; padding: 0.45rem 1rem; border-radius: 20px; text-decoration: none; box-shadow: 0 articlpx 10px rgba(37, 99, 235, 0.25);">
             <span class="arrow-icon" style="font-size: 0.9rem; line-height: 1; display: inline-block;">↑</span> Back to top
         </a>
     </div>
@@ -558,6 +563,99 @@
         © 2026 Andre Tutoring. All rights reserved. | <a href="../" style="color: #64748b; text-decoration: underline;">Home</a>
     </p>
 </footer>
+
+<script>
+    document.querySelector('.back-to-top-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+<script>
+class Accordion {
+  constructor(el) {
+    this.el = el;
+    this.summary = el.querySelector('summary');
+    this.animation = null;
+    this.isClosing = false;
+    this.isExpanding = false;
+    this.summary.addEventListener('click', (e) => this.onClick(e));
+  }
+
+  onClick(e) {
+    e.preventDefault();
+    this.el.style.overflow = 'hidden';
+    if (this.isClosing || !this.el.open) {
+      this.open();
+    } else if (this.isExpanding || this.el.open) {
+      this.shrink();
+    }
+  }
+
+  shrink() {
+    this.isClosing = true;
+    const startHeight = `${this.el.offsetHeight}px`;
+    const endHeight = `${this.summary.offsetHeight}px`;
+
+    if (this.animation) this.animation.cancel();
+
+    this.animation = this.el.animate({
+      height: [startHeight, endHeight]
+    }, {
+      duration: 300,
+      easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+    });
+
+    this.animation.onfinish = () => this.onAnimationFinish(false);
+    this.animation.oncancel = () => this.isClosing = false;
+  }
+
+  open() {
+    this.el.style.height = `${this.el.offsetHeight}px`;
+    this.el.open = true;
+    window.requestAnimationFrame(() => this.expand());
+  }
+
+  expand() {
+    this.isExpanding = true;
+    const startHeight = `${this.el.offsetHeight}px`;
+    
+    // Dynamically measure true natural height to prevent overshooting
+    this.el.style.height = 'auto';
+    const endHeight = `${this.el.offsetHeight}px`;
+    this.el.style.height = startHeight;
+
+    if (this.animation) this.animation.cancel();
+
+    this.animation = this.el.animate({
+      height: [startHeight, endHeight]
+    }, {
+      duration: 300,
+      easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+    });
+
+    this.animation.onfinish = () => this.onAnimationFinish(true);
+    this.animation.oncancel = () => this.isExpanding = false;
+  }
+
+  onAnimationFinish(open) {
+    this.el.open = open;
+    this.animation = null;
+    this.isClosing = false;
+    this.isExpanding = false;
+    this.el.style.height = '';
+    this.el.style.overflow = '';
+  }
+}
+
+document.querySelectorAll('details').forEach((el) => {
+  new Accordion(el);
+});
+</script>
+
 
 </body>
 </html>

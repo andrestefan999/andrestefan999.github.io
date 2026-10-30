@@ -1,7 +1,7 @@
 /* --- Root & Global Settings --- */
 html {
-    scroll-behavior: smooth !important;
-    overscroll-behavior-y: auto !important;
+    scroll-behavior: smooth;
+    overscroll-behavior-y: auto;
 }
 
 body {

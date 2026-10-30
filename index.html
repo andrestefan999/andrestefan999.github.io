@@ -326,8 +326,8 @@
 </header>
 
 <div style="width: 100%; overflow: hidden;">
-    <section id="about-me" class="stats" style="position: relative; padding: 2rem 0 !important; margin-top: 1rem; margin-bottom: 0rem !important; background-image: url('Images/landscape.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; width: 100%; box-sizing: border-box;">
-	<div class="container" style="max-width: 1250px; padding: 0rem 1rem;">
+    <section id="about-me" class="stats" style="position: relative; padding: 2rem 0 !important; margin-top: 1rem; margin-bottom: 0rem !important; width: 100%; box-sizing: border-box;">
+		<div class="container" style="max-width: 1250px; padding: 0rem 1rem;">
             <div class="glass-panel" style="padding: 3rem 2rem 1.5rem 2rem; border-radius: 16px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);">
                 <h2 style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; color: #2e5a2e;">Meet Your Online Tutor</h2>
                 <div class="grid" style="align-items: center; gap: 3rem; grid-template-columns: 0.8fr 1.2fr;">
@@ -745,6 +745,16 @@ class Accordion {
 document.querySelectorAll('details').forEach((el) => {
   new Accordion(el);
 });
+</script>
+
+	<script>
+const landscapeImage = new Image();
+
+landscapeImage.onload = function() {
+    document.getElementById('about-me').classList.add('image-loaded');
+};
+
+landscapeImage.src = '/Images/landscape.jpg';
 </script>
 
 </body>

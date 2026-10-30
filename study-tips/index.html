@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Study Tips | Andre Tutoring</title>
+    <meta name="description" content="Practical study tips to help students build consistent habits, improve problem-solving, use active recall and interleaving, and learn more effectively.">
+    <meta name="author" content="Andre Mitchell">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://andremtutoring.com/study-tips/">
+
+    <link rel="icon" type="image/svg+xml" href="../Images/logo_2.svg">
+    <link rel="alternate icon" type="image/png" href="../Images/logo.png">
+    <link rel="apple-touch-icon" href="../Images/logo.png">
+
+    <meta property="og:site_name" content="Andre Tutoring">
+    <meta property="og:title" content="Study Tips | Andre Tutoring">
+    <meta property="og:description" content="Practical strategies to build better study habits, understand difficult concepts and improve your learning.">
+    <meta property="og:url" content="https://andremtutoring.com/study-tips/">
+    <meta property="og:type" content="article">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Study Tips">
+    <meta name="twitter:description" content="Practical strategies to build better study habits and learn more effectively.">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Study Tips",
+        "description": "Practical strategies to build consistent study habits, improve problem-solving, use active recall and interleaving, and learn more effectively.",
+        "author": {
+            "@type": "Person",
+            "name": "Andre Mitchell"
+        },
+        "publisher": {
+            "@type": "EducationalOrganization",
+            "name": "Andre Tutoring",
+            "url": "https://andremtutoring.com/",
+            "logo": "https://andremtutoring.com/Images/logo.png"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://andremtutoring.com/study-tips/"
+        }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.lime.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Article title font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            scroll-behavior: smooth !important;
+            overflow-x: hidden !important;
+            width: 100% !important;
+            position: relative;
+        }
+
+        /* --- Smooth Cascading Entrance Animation --- */
+        @keyframes subtleEntrance {
+            0% {
+                opacity: 0;
+                transform: translateY(24px) scale(0.995);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        header.full-width-nav {
+            animation: subtleEntrance 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        body > div, body > section, body > main {
+            opacity: 0;
+            animation: subtleEntrance 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        body > main {
+            animation-delay: 0.2s;
+        }
+
+        /* --- Typography --- */
+        h1, h2, h3, h4 {
+            letter-spacing: -0.025em !important;
+        }
+
+        /* --- Card Elevation --- */
+        article {
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                        box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+
+        article:hover {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 16px 32px rgba(2, 132, 199, 0.15) !important;
+        }
+
+        /* --- Premium CTA Buttons --- */
+        .btn-premium {
+            display: block;
+            width: 100%;
+            padding: 0.8rem 1.25rem !important;
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%) !important;
+            color: #ffffff !important;
+            text-align: center;
+            border: none !important;
+            border-radius: 8px !important;
+            text-decoration: none !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3) !important;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+
+        .btn-premium:hover {
+            box-shadow: 0 6px 20px rgba(2, 132, 199, 0.45) !important;
+            transform: translateY(-2px) !important;
+            color: #ffffff !important;
+        }
+
+        /* --- Dropdown Menu Styling --- */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background: transparent;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            background: #ffffff !important;
+            background-color: #ffffff !important;
+            opacity: 1 !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            min-width: 240px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+            z-index: 9999;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            background-color: #ffffff !important;
+            list-style: none !important;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu a {
+            display: block !important;
+            padding: 0.8rem 1.1rem !important;
+            margin: 0 !important;
+            color: #1e293b !important;
+            background-color: #ffffff !important;
+            font-size: 0.9rem !important;
+            font-weight: 500 !important;
+            line-height: 1.4 !important;
+            white-space: nowrap !important;
+            text-decoration: none !important;
+            transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease !important;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f8fafc !important;
+            color: #0284c7 !important;
+            transform: translateX(3px) !important;
+        }
+
+        /* --- Tablet & Mobile Styles --- */
+        @media (max-width: 1024px) {
+            header.full-width-nav {
+                padding: 0.15rem 0 !important;
+                width: 100% !important;
+            }
+
+            header nav.container {
+                flex-direction: column !important;
+                align-items: center !important;
+                padding: 0.3rem 0.25rem !important;
+                margin: 0 !important;
+                gap: 2px !important;
+                width: 100% !important;
+            }
+
+            header nav ul:first-child img {
+                width: 32px !important;
+            }
+
+            header nav ul:first-child h3 {
+                font-size: 1.15rem !important;
+            }
+
+            header nav ul:last-child {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 8px 12px !important;
+                width: 100% !important;
+                text-align: center !important;
+                padding: 0 0.25rem !important;
+            }
+
+            header nav ul:last-child li {
+                margin-right: 0 !important;
+                padding: 0 !important;
+                width: auto !important;
+            }
+
+            header nav ul:last-child a {
+                display: block !important;
+                font-size: 0.85rem !important;
+                padding: 2px 4px !important;
+                background-color: transparent !important;
+                text-decoration: none !important;
+            }
+
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                border: none;
+                background: #f8fafc;
+                display: none;
+            }
+
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+        }
+
+        /* --- Article Page Styling --- */
+        body {
+            background: #edf5fa;
+        }
+
+        .article-container {
+            max-width: 1200px;
+            margin: 3rem auto 2rem;
+            padding: 0 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .article-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2.5rem;
+            background: #ffffff;
+            border: 1px solid #dbeafe;
+            border-radius: 20px;
+            box-shadow: 0 16px 40px rgba(2, 132, 199, 0.10);
+        }
+
+        .article-heading {
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #dbeafe;
+        }
+
+        .article-category {
+            display: inline-block;
+            color: #ffffff;
+            background: #0284c7;
+            padding: 0.35rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 10px rgba(2, 132, 199, 0.2);
+        }
+
+        .article-heading h1 {
+            color: #0f172a;
+            font-weight: 800;
+            margin-bottom: 0.85rem;
+            font-size: 2.6rem;
+            line-height: 1.2;
+        }
+
+        .article-heading p {
+            color: #475569;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            max-width: 800px;
+            margin-bottom: 0;
+        }
+
+        .article-content p {
+            color: #334155;
+            line-height: 1.85;
+        }
+
+        .article-intro {
+            font-size: 1.1rem;
+            color: #1e293b !important;
+        }
+
+        .article-content h2 {
+            color: #0369a1;
+            font-size: 1.55rem;
+            margin-top: 2.8rem;
+            margin-bottom: 0.9rem;
+        }
+
+        .article-content h2:first-of-type {
+            margin-top: 2rem;
+        }
+
+        /* Article images */
+        .article-image {
+            margin: 2rem 0;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #e0f2fe;
+            box-shadow: 0 8px 22px rgba(15, 23, 42, 0.10);
+        }
+
+        .article-image img {
+            display: block;
+            width: 100%;
+            max-height: 340px;
+            object-fit: cover;
+        }
+
+        .article-image figcaption {
+            padding: 0.7rem 1rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .article-callout {
+            background: #eff6ff;
+            border-left: 4px solid #0284c7;
+            padding: 1.2rem 1.4rem;
+            margin: 1.8rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .article-callout p {
+            margin-bottom: 0;
+        }
+
+        /* Time allocation table */
+        .time-table-wrapper {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border: 1px solid #dbeafe;
+            border-radius: 12px;
+        }
+
+        .time-table {
+            width: 100%;
+            min-width: 300px;
+            margin: 0;
+            border-collapse: collapse;
+            background: #ffffff;
+        }
+
+        .time-table thead {
+            background: #f1f5f9;
+        }
+
+        .time-table th,
+        .time-table td {
+            padding: 0.85rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .time-table th {
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        .time-table td {
+            color: #334155;
+        }
+
+        .time-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .time-table tbody tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .table-note {
+            color: #64748b !important;
+            font-size: 0.9rem;
+            margin-top: 0.75rem;
+        }
+
+        .article-footer {
+            border-top: 1px solid #dbeafe;
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+        }
+
+        .related-links {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .related-links h2 {
+            margin-top: 0;
+        }
+
+        .related-links ul {
+            margin-bottom: 0;
+        }
+
+        /* --- Back to Top Button: Original Site Style --- */
+        @keyframes arrowBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+
+        .back-to-top-btn:hover {
+            transform: translateY(-3px) !important;
+            background-color: #0369a1 !important;
+            box-shadow: 0 6px 15px rgba(2, 132, 199, 0.4) !important;
+        }
+
+        .back-to-top-btn:hover .arrow-icon {
+            animation: arrowBounce 0.6s infinite ease-in-out;
+        }
+
+        @media (max-width: 600px) {
+            .article-container {
+                margin: 1.5rem auto;
+                padding: 0 0.75rem;
+            }
+
+            .article-content {
+                padding: 1.4rem;
+            }
+
+            .article-heading h1 {
+                font-size: 1.9rem;
+            }
+
+            .article-heading p {
+                font-size: 1rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.35rem;
+            }
+
+            .article-image img {
+                max-height: 240px;
+            }
+        }
+    </style>
+</head>
+
+<body style="
+    background-color: #edf5fa;
+    background-image:
+        linear-gradient(
+            rgba(237, 245, 250, 0.36),
+            rgba(237, 245, 250, 0.4)
+        ),
+        url('../Images/Tide.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+">
+
+<!-- Navigation: copied from your Resources page -->
+<header class="full-width-nav theme-blue" style="position: sticky; top: 0; z-index: 1000; background-color: var(--pico-background-color); box-shadow: 0 2px 10px rgba(0,0,0,0.05); width: 100%;">
+    <nav class="container" style="padding-top: 0rem; padding-bottom: 0rem; margin-bottom: -15px; margin-top: -15px; min-height: auto;">
+        <ul>
+            <li style="display: flex; align-items: center; gap: 10px;">
+                <img src="../Images/logo_2.svg" alt="Andre Tutoring Logo" style="width: 50px;">
+                <h3 style="margin: 0;"><a href="../" style="text-decoration: none; color: inherit;">Andre Tutoring</a></h3>
+            </li>
+        </ul>
+
+        <ul style="display: flex; list-style: none; padding: 0; align-items: center;">
+            <li style="margin-right: 1.5rem;"><a href="../">Home</a></li>
+
+            <li style="margin-right: 1.5rem;" class="dropdown">
+                <a href="#" style="text-decoration: none;">Subjects ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../physics/">Physics (HSC)</a></li>
+                    <li><a href="../extension-maths/">Extension Maths</a></li>
+                    <li><a href="../advanced-maths/">Advanced &amp; Standard Maths</a></li>
+                    <li><a href="../junior-maths/">Junior Maths (Yr 7-10)</a></li>
+                </ul>
+            </li>
+
+            <li style="margin-right: 1.5rem;" class="dropdown">
+                <a href="../resources/" style="text-decoration: none;">Resources ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../resources/">Resources</a></li>
+                    <li><a href="../time-management/">Time Management</a></li>
+                    <li><a href="../study-tips/">Study Tips</a></li>
+                    <li><a href="../hsc-physics/">HSC Physics</a></li>
+                    <li><a href="../mathematics/">Mathematics</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../contact/">Contact &amp; Booking</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="article-container">
+
+    <article class="article-content" style="max-width: 1100px; transform: none !important; transition: none !important;">
+
+        <div class="article-heading">
+            <span class="article-category">Study Advice</span>
+
+            <h1 style="font-family: 'Lora', Georgia, serif; font-size: 2.9rem; font-weight: 700; letter-spacing: -0.04em; color: #102a43;">
+                Study Tips
+            </h1>
+
+            <p>
+                Practical strategies to build better study habits, understand difficult
+                concepts and make your study time more effective.
+            </p>
+        </div>
+
+        <p class="article-intro">
+            Studying effectively is about more than how many hours you spend at your desk.
+            The quality of your practice, your approach to learning and your ability to
+            remain consistent all have a significant impact on your results.
+        </p>
+
+        <p>
+            Many students spend considerable time studying without making the progress
+            they expect. Repeatedly reading notes, memorising facts or completing familiar
+            questions can feel productive, but these activities do not necessarily develop
+            a deep understanding.
+        </p>
+
+        <p>
+            Developing effective study habits requires two things: building a consistent
+            routine and learning how to engage with material effectively.
+        </p>
+
+        <figure class="article-image" style="width: 75%; max-width: 720px; margin: 2rem auto;">
+            <img
+                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1400&q=85"
+                alt="Notebook and writing materials arranged on a study desk"
+                loading="lazy"
+                width="1400"
+                height="900"
+                style="width: 100%; max-height: 340px; object-fit: cover;">
+            <figcaption>A productive study routine begins with clear goals and an organised workspace.</figcaption>
+        </figure>
+
+        <h2>1. Build Consistent Study Habits</h2>
+
+        <p>
+            One of the biggest challenges students face is simply getting themselves to
+            study. It is easy to put off difficult tasks, particularly when there is no
+            immediate deadline.
+        </p>
+
+        <p>
+            A useful starting point is to establish a clear reason for studying. Whether
+            your goal is to achieve a particular ATAR, gain entry into a university course
+            or develop a deeper understanding of a subject, having a meaningful objective
+            gives you something to work towards.
+        </p>
+
+        <p>
+            However, motivation alone is unreliable. Instead of waiting until you feel
+            motivated, aim to develop a routine that makes studying a regular part of
+            your day.
+        </p>
+
+        <p>
+            If you currently struggle to study consistently, attempting to spend several
+            hours studying every afternoon is unlikely to be sustainable. Start with a
+            manageable amount of time, perhaps 30 minutes each day, and gradually
+            increase it as the habit becomes established.
+        </p>
+
+        <p>
+            It also helps to set clear and achievable goals. Rather than sitting down
+            with the vague intention of studying Mathematics, decide exactly what you
+            want to accomplish. For example, you might revise a particular concept,
+            complete five practice questions or review mistakes from a previous exam.
+        </p>
+
+        <p>
+            Allocating approximate time limits to each task provides structure and
+            makes it easier to get started. The Pomodoro technique can also help when
+            motivation is low. This involves working in focused intervals, commonly
+            25 minutes, followed by a short break.
+        </p>
+
+        <p>
+            Ultimately, a sustainable routine is more valuable than occasionally
+            spending an entire afternoon studying before an examination.
+        </p>
+
+        <h2>2. Practise Solving Unfamiliar Problems</h2>
+
+        <p>
+            For subjects such as Mathematics and Physics, practice is essential.
+            Understanding a concept in theory is very different from being able to
+            apply it independently to a question.
+        </p>
+
+        <p>
+            Repeated practice develops mathematical fluency, reinforces important
+            techniques and makes it easier to recognise patterns. However, simply
+            completing large numbers of familiar questions is not necessarily the
+            most effective approach.
+        </p>
+
+        <p>
+            One of the most important skills you can develop is the ability to work
+            through a problem you have never encountered before. Examination questions
+            may combine several concepts, present information in an unfamiliar way
+            or require you to apply your knowledge in a new context.
+        </p>
+
+        <p>
+            When approaching an unfamiliar question, start by identifying the
+            information provided and what you are being asked to determine. Consider
+            which concepts might be relevant and how you can connect the information
+            in the question to the result you need.
+        </p>
+
+        <p>
+            Even if you cannot solve the entire question, establishing a logical
+            starting point is valuable. This develops your ability to reason
+            independently rather than relying on memorised procedures.
+        </p>
+
+        <figure class="article-image" style="width: 75%; max-width: 720px; margin: 2rem auto;">
+            <img
+                src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1400&q=85"
+                alt="Mathematical equations written on a board"
+                loading="lazy"
+                width="1400"
+                height="900"
+                style="width: 100%; max-height: 340px; object-fit: cover;">
+            <figcaption>Working through unfamiliar problems develops independent reasoning and problem-solving skills.</figcaption>
+        </figure>
+
+        <p>
+            When you encounter a difficult question, do not simply memorise its solution.
+            Try to understand why each step was necessary and identify the key idea that
+            allowed the problem to be solved.
+        </p>
+
+        <p>
+            Consider how that same idea might apply to other questions. This allows you
+            to transfer your understanding to a much wider range of problems.
+        </p>
+
+        <h2>3. Understand Why You Make Mistakes</h2>
+
+        <p>
+            A common misconception among students is that most examination errors are
+            simply silly mistakes. In reality, many errors result from an underlying
+            weakness in understanding, problem-solving technique or examination habits.
+        </p>
+
+        <p>
+            It is important to identify the actual cause rather than simply telling
+            yourself to be more careful.
+        </p>
+
+        <p>
+            Skipping intermediate steps, performing too many operations mentally or
+            writing equations in a disorganised manner increases the likelihood of
+            errors. Developing a consistent approach, keeping working organised and
+            writing down important steps can help prevent them.
+        </p>
+
+        <p>
+            Other errors occur because students do not understand why a particular
+            mathematical or scientific rule is necessary. For example, when solving
+            an equation by squaring both sides, additional solutions may be introduced
+            that do not satisfy the original equation. Similarly, taking the square
+            root of both sides requires consideration of both positive and negative
+            possibilities.
+        </p>
+
+        <p>
+            Even when you understand a concept and use an appropriate method, you can
+            still make errors if you lose concentration or fail to check your work.
+            Checking should be an active part of your problem-solving process.
+        </p>
+
+        <p>When reviewing your answers, consider whether:</p>
+
+        <ul>
+            <li>Your answer has the correct units</li>
+            <li>Your result is mathematically or physically reasonable</li>
+            <li>You have answered the actual question</li>
+            <li>Your solution satisfies the original equation or conditions</li>
+        </ul>
+
+        <div class="article-callout">
+            <p>
+                <strong>Remember:</strong> Many careless mistakes have identifiable
+                causes. Understanding why an error occurred is more useful than
+                simply repeating the question or telling yourself to be more careful.
+            </p>
+        </div>
+
+        <h2>4. Develop a Deep Understanding of Content-Based Subjects</h2>
+
+        <p>
+            For subjects such as Biology and Chemistry, developing a strong underlying
+            understanding is particularly important.
+        </p>
+
+        <p>
+            Although remembering key facts is necessary, isolated rote memorisation
+            often produces less durable knowledge and makes it difficult to apply
+            information to unfamiliar situations. Instead, aim to understand why
+            things happen and how different concepts relate to one another.
+        </p>
+
+        <p>
+            Whenever you learn a new concept, try to understand the reasoning behind it.
+            Why does this process occur? What causes it? How does it relate to other
+            concepts you have studied?
+        </p>
+
+        <p>
+            For example, when learning about a physiological process, do not simply
+            memorise the sequence of events. Consider why each step occurs and what
+            would happen if one part of the process changed.
+        </p>
+
+        <p>
+            This creates meaningful connections between ideas, making information
+            easier to understand, remember and apply in different contexts.
+        </p>
+
+        <h2>5. Use Active Recall and Spaced Repetition</h2>
+
+        <p>
+            Simply rereading information can create a false sense of familiarity.
+            You might recognise material when looking at it but struggle to recall
+            it independently.
+        </p>
+
+        <p>
+            Active recall addresses this by requiring you to retrieve information
+            from memory. Rather than looking at your notes, try explaining a concept
+            in your own words, drawing a process from memory or answering questions
+            about previously studied material.
+        </p>
+
+        <p>
+            Spaced repetition complements this approach by revisiting information
+            at gradually increasing intervals. Rather than attempting to learn
+            everything in one session, return to important concepts over several
+            days and weeks.
+        </p>
+
+        <p>
+            Combining active recall with spaced repetition helps strengthen
+            long-term retention and makes it easier to retrieve information
+            when you need it.
+        </p>
+
+        <h2>6. Interleave Your Practice</h2>
+
+        <p>
+            Another useful learning technique is interleaving. Rather than spending
+            an entire study session practising one type of question, interleaving
+            involves mixing different topics or problem types within a study session.
+        </p>
+
+        <p>
+            For example, instead of completing 20 consecutive questions on
+            differentiation, you might alternate between differentiation,
+            integration, trigonometry and probability.
+        </p>
+
+        <p>
+            Although this can initially feel more difficult, it encourages you to
+            identify which concepts and techniques are appropriate for each question,
+            rather than simply repeating the same procedure.
+        </p>
+
+        <p>
+            This is particularly useful for examination preparation, where questions
+            are rarely grouped in a way that tells you exactly which method to use.
+        </p>
+
+        <p>
+            Interleaving works particularly well alongside spaced repetition,
+            allowing you to revisit different concepts while practising how to
+            distinguish between them.
+        </p>
+
+        <div class="article-callout">
+            <p>
+                <strong>Example:</strong> Instead of completing an entire worksheet
+                on one topic, try alternating between several topics you have already
+                studied. This forces you to decide which approach is appropriate
+                for each question.
+            </p>
+        </div>
+
+        <h2>7. Use Notes Effectively</h2>
+
+        <p>
+            Note-taking is often poorly utilised. Many students spend considerable
+            time copying information from textbooks, presentations or online resources
+            without actively engaging with the material.
+        </p>
+
+        <p>
+            Producing detailed notes can feel productive, but it can also distract
+            from the more important task of understanding what you are learning.
+            Notes can be found online, but developing a genuine understanding of
+            a difficult concept requires much more active engagement.
+        </p>
+
+        <p>
+            This does not mean that notes are unnecessary. Rather, they should
+            support your learning instead of becoming the primary learning activity.
+        </p>
+
+        <p>
+            When learning something new, focus on understanding the concept before
+            attempting to summarise it. Once you have developed an understanding,
+            concise notes can help consolidate the important ideas.
+        </p>
+
+        <p>
+            Mind maps are useful for content-heavy subjects because they show how
+            different concepts connect. Alternatively, writing short summaries
+            in your own words can help identify the most important information
+            without overwhelming yourself with unnecessary detail.
+        </p>
+
+        <figure class="article-image" style="width: 75%; max-width: 720px; margin: 2rem auto;">
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=85"
+                alt="Open notebook and organised study materials"
+                loading="lazy"
+                width="1400"
+                height="900"
+                style="width: 100%; max-height: 340px; object-fit: cover;">
+            <figcaption>Concise notes and mind maps can help consolidate your understanding of complex topics.</figcaption>
+        </figure>
+
+        <h2>8. Prioritise Sleep and Recovery</h2>
+
+        <p>
+            Sleep is an important part of learning, not simply time away from studying.
+            It supports memory consolidation, allowing information learned during the
+            day to be strengthened and retained.
+        </p>
+
+        <p>
+            Consistently sacrificing sleep to study for longer can therefore be
+            counterproductive. Poor sleep can also impair concentration, attention
+            and problem-solving ability, making subsequent study sessions less effective.
+        </p>
+
+        <p>
+            Aim to maintain a consistent sleep schedule and get sufficient sleep
+            each night. Teenagers generally need around 8–10 hours, while adults
+            generally need 7–9 hours.
+        </p>
+
+        <p>
+            Rather than staying up late to finish another set of questions, prioritise
+            getting enough rest so that you can approach your next study session
+            with better concentration.
+        </p>
+
+        <h2>Final Thoughts</h2>
+
+        <p>
+            Effective studying requires a balance between consistency, active
+            engagement and deliberate practice. Establish a sustainable routine,
+            challenge yourself with unfamiliar problems, learn from your mistakes
+            and make use of techniques such as active recall, spaced repetition
+            and interleaving.
+        </p>
+
+        <p>
+            It is easy to measure productivity by the number of hours spent studying
+            or questions completed. However, these measures do not necessarily
+            reflect how much you have learned.
+        </p>
+
+        <p>Instead, regularly evaluate your progress:</p>
+
+        <ul>
+            <li>Can you explain concepts without referring to your notes?</li>
+            <li>Can you solve unfamiliar questions independently?</li>
+            <li>Can you identify and correct the causes of previous mistakes?</li>
+            <li>Can you recall information after several days or weeks?</li>
+        </ul>
+
+        <p>
+            Developing effective study habits takes time. By establishing a
+            sustainable routine and engaging more deeply with the material,
+            you can gradually become a more independent and effective learner.
+        </p>
+
+        <p>
+            <strong>The goal is not simply to study more. It is to learn more effectively.</strong>
+        </p>
+
+        <div class="article-footer">
+            <p>
+                <strong>Looking to improve your academic performance?</strong>
+                Explore my tutoring resources or find out more about
+                Mathematics and Physics tutoring.
+            </p>
+
+            <div class="related-links">
+                <h2>Related Resources</h2>
+                <ul>
+                    <li><a href="../resources/">Browse tutoring resources</a></li>
+                    <li><a href="../time-management/">Exam time management</a></li>
+                    <li><a href="../physics/">HSC Physics tutoring</a></li>
+                    <li><a href="../advanced-maths/">Mathematics Advanced tutoring</a></li>
+                    <li><a href="../extension-maths/">Mathematics Extension tutoring</a></li>
+                    <li><a href="../contact/">Get in touch</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </article>
+
+</main>
+
+<!-- Footer: original site styling -->
+<footer style="max-width: 1200px; margin: 3rem auto 1.5rem auto; padding: 0 1rem; width: 100%; box-sizing: border-box;">
+
+    <div style="display: flex; justify-content: center; margin-bottom: 1rem; margin-top: -1.7rem;">
+        <a href="#" class="back-to-top-btn" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 700; color: #ffffff; background-color: #0284c7; padding: 0.5rem 1.2rem; border-radius: 20px; text-decoration: none; box-shadow: 0 4px 10px rgba(2, 132, 199, 0.25); transition: all 0.25s ease-in-out;">
+            <span class="arrow-icon" style="font-size: 0.9rem; line-height: 1; display: inline-block;">↑</span> Back to top
+        </a>
+    </div>
+
+    <hr style="border: 0; border-top: 2px solid #0284c7; margin: 0 0 0.75rem 0;">
+
+    <p style="text-align: center; margin: 0; font-size: 0.85rem; color: #000000;">
+        © 2026 Andre Tutoring. All rights reserved.
+    </p>
+</footer>
+
+<script>
+    document.querySelector('.back-to-top-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+</body>
+</html>

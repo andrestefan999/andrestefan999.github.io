@@ -1,1 +1,868 @@
-time-management/index.html
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>How to Improve Your Exam Time Management | Andre Tutoring</title>
+    <meta name="description" content="Learn practical exam time management strategies, including how to use reading time, allocate time to questions, when to move on and how to practise under time pressure.">
+    <meta name="author" content="Andre Mitchell">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://andremtutoring.com/articles/">
+
+    <link rel="icon" type="image/svg+xml" href="../Images/logo_2.svg">
+    <link rel="alternate icon" type="image/png" href="../Images/logo.png">
+    <link rel="apple-touch-icon" href="../Images/logo.png">
+
+    <meta property="og:site_name" content="Andre Tutoring">
+    <meta property="og:title" content="How to Improve Your Exam Time Management | Andre Tutoring">
+    <meta property="og:description" content="Practical strategies to manage your time more effectively in exams and maximise your marks.">
+    <meta property="og:url" content="https://andremtutoring.com/articles/">
+    <meta property="og:type" content="article">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How to Improve Your Exam Time Management">
+    <meta name="twitter:description" content="Practical strategies to manage your time more effectively in exams and maximise your marks.">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How to Improve Your Exam Time Management",
+        "description": "Practical strategies to manage your time more effectively in exams, including reading time, question allocation, pressure training and writing efficiency.",
+        "author": {
+            "@type": "Person",
+            "name": "Andre Mitchell"
+        },
+        "publisher": {
+            "@type": "EducationalOrganization",
+            "name": "Andre Tutoring",
+            "url": "https://andremtutoring.com/",
+            "logo": "https://andremtutoring.com/Images/logo.png"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://andremtutoring.com/articles/"
+        }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.lime.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Article title font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            scroll-behavior: smooth !important;
+            overflow-x: hidden !important;
+            width: 100% !important;
+            position: relative;
+        }
+
+        /* --- Smooth Cascading Entrance Animation --- */
+        @keyframes subtleEntrance {
+            0% {
+                opacity: 0;
+                transform: translateY(24px) scale(0.995);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        header.full-width-nav {
+            animation: subtleEntrance 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        body > div, body > section, body > main {
+            opacity: 0;
+            animation: subtleEntrance 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        body > main {
+            animation-delay: 0.2s;
+        }
+
+        /* --- Typography --- */
+        h1, h2, h3, h4 {
+            letter-spacing: -0.025em !important;
+        }
+
+        /* --- Card Elevation --- */
+        article {
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                        box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+
+        article:hover {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 16px 32px rgba(2, 132, 199, 0.15) !important;
+        }
+
+        /* --- Premium CTA Buttons --- */
+        .btn-premium {
+            display: block;
+            width: 100%;
+            padding: 0.8rem 1.25rem !important;
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%) !important;
+            color: #ffffff !important;
+            text-align: center;
+            border: none !important;
+            border-radius: 8px !important;
+            text-decoration: none !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3) !important;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+
+        .btn-premium:hover {
+            box-shadow: 0 6px 20px rgba(2, 132, 199, 0.45) !important;
+            transform: translateY(-2px) !important;
+            color: #ffffff !important;
+        }
+
+        /* --- Dropdown Menu Styling --- */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background: transparent;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            background: #ffffff !important;
+            background-color: #ffffff !important;
+            opacity: 1 !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            min-width: 240px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+            z-index: 9999;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            background-color: #ffffff !important;
+            list-style: none !important;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu a {
+            display: block !important;
+            padding: 0.8rem 1.1rem !important;
+            margin: 0 !important;
+            color: #1e293b !important;
+            background-color: #ffffff !important;
+            font-size: 0.9rem !important;
+            font-weight: 500 !important;
+            line-height: 1.4 !important;
+            white-space: nowrap !important;
+            text-decoration: none !important;
+            transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease !important;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f8fafc !important;
+            color: #0284c7 !important;
+            transform: translateX(3px) !important;
+        }
+
+        /* --- Tablet & Mobile Styles --- */
+        @media (max-width: 1024px) {
+            header.full-width-nav {
+                padding: 0.15rem 0 !important;
+                width: 100% !important;
+            }
+
+            header nav.container {
+                flex-direction: column !important;
+                align-items: center !important;
+                padding: 0.3rem 0.25rem !important;
+                margin: 0 !important;
+                gap: 2px !important;
+                width: 100% !important;
+            }
+
+            header nav ul:first-child img {
+                width: 32px !important;
+            }
+
+            header nav ul:first-child h3 {
+                font-size: 1.15rem !important;
+            }
+
+            header nav ul:last-child {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 8px 12px !important;
+                width: 100% !important;
+                text-align: center !important;
+                padding: 0 0.25rem !important;
+            }
+
+            header nav ul:last-child li {
+                margin-right: 0 !important;
+                padding: 0 !important;
+                width: auto !important;
+            }
+
+            header nav ul:last-child a {
+                display: block !important;
+                font-size: 0.85rem !important;
+                padding: 2px 4px !important;
+                background-color: transparent !important;
+                text-decoration: none !important;
+            }
+
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                border: none;
+                background: #f8fafc;
+                display: none;
+            }
+
+            .dropdown:hover .dropdown-menu {
+                display: block;
+            }
+        }
+
+        /* --- Article Page Styling --- */
+        body {
+            background: #edf5fa;
+        }
+
+        .article-container {
+            max-width: 1200px;
+            margin: 3rem auto 2rem;
+            padding: 0 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .article-content {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 2.5rem;
+            background: #ffffff;
+            border: 1px solid #dbeafe;
+            border-radius: 20px;
+            box-shadow: 0 16px 40px rgba(2, 132, 199, 0.10);
+        }
+
+        .article-heading {
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #dbeafe;
+        }
+
+        .article-category {
+            display: inline-block;
+            color: #ffffff;
+            background: #0284c7;
+            padding: 0.35rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 10px rgba(2, 132, 199, 0.2);
+        }
+
+        .article-heading h1 {
+            color: #0f172a;
+            font-weight: 800;
+            margin-bottom: 0.85rem;
+            font-size: 2.6rem;
+            line-height: 1.2;
+        }
+
+        .article-heading p {
+            color: #475569;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            max-width: 800px;
+            margin-bottom: 0;
+        }
+
+        .article-content p {
+            color: #334155;
+            line-height: 1.85;
+        }
+
+        .article-intro {
+            font-size: 1.1rem;
+            color: #1e293b !important;
+        }
+
+        .article-content h2 {
+            color: #0369a1;
+            font-size: 1.55rem;
+            margin-top: 2.8rem;
+            margin-bottom: 0.9rem;
+        }
+
+        .article-content h2:first-of-type {
+            margin-top: 2rem;
+        }
+
+        /* Article images */
+        .article-image {
+            margin: 2rem 0;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #e0f2fe;
+            box-shadow: 0 8px 22px rgba(15, 23, 42, 0.10);
+        }
+
+        .article-image img {
+            display: block;
+            width: 100%;
+            max-height: 340px;
+            object-fit: cover;
+        }
+
+        .article-image figcaption {
+            padding: 0.7rem 1rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .article-callout {
+            background: #eff6ff;
+            border-left: 4px solid #0284c7;
+            padding: 1.2rem 1.4rem;
+            margin: 1.8rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .article-callout p {
+            margin-bottom: 0;
+        }
+
+        /* Time allocation table */
+        .time-table-wrapper {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border: 1px solid #dbeafe;
+            border-radius: 12px;
+        }
+
+        .time-table {
+            width: 100%;
+            min-width: 300px;
+            margin: 0;
+            border-collapse: collapse;
+            background: #ffffff;
+        }
+
+        .time-table thead {
+            background: #f1f5f9;
+        }
+
+        .time-table th,
+        .time-table td {
+            padding: 0.85rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .time-table th {
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        .time-table td {
+            color: #334155;
+        }
+
+        .time-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .time-table tbody tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .table-note {
+            color: #64748b !important;
+            font-size: 0.9rem;
+            margin-top: 0.75rem;
+        }
+
+        .article-footer {
+            border-top: 1px solid #dbeafe;
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+        }
+
+        .related-links {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .related-links h2 {
+            margin-top: 0;
+        }
+
+        .related-links ul {
+            margin-bottom: 0;
+        }
+
+        /* --- Back to Top Button: Original Site Style --- */
+        @keyframes arrowBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+
+        .back-to-top-btn:hover {
+            transform: translateY(-3px) !important;
+            background-color: #0369a1 !important;
+            box-shadow: 0 6px 15px rgba(2, 132, 199, 0.4) !important;
+        }
+
+        .back-to-top-btn:hover .arrow-icon {
+            animation: arrowBounce 0.6s infinite ease-in-out;
+        }
+
+        @media (max-width: 600px) {
+            .article-container {
+                margin: 1.5rem auto;
+                padding: 0 0.75rem;
+            }
+
+            .article-content {
+                padding: 1.4rem;
+            }
+
+            .article-heading h1 {
+                font-size: 1.9rem;
+            }
+
+            .article-heading p {
+                font-size: 1rem;
+            }
+
+            .article-content h2 {
+                font-size: 1.35rem;
+            }
+
+            .article-image img {
+                max-height: 240px;
+            }
+        }
+    </style>
+</head>
+
+<body style="
+    background-color: #edf5fa;
+    background-image:
+        linear-gradient(
+            rgba(237, 245, 250, 0.72),
+            rgba(237, 245, 250, 0.80)
+        ),
+        url('../Images/beach.1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+">
+
+<!-- Navigation: copied from your Resources page -->
+<header class="full-width-nav theme-blue" style="position: sticky; top: 0; z-index: 1000; background-color: var(--pico-background-color); box-shadow: 0 2px 10px rgba(0,0,0,0.05); width: 100%;">
+    <nav class="container" style="padding-top: 0rem; padding-bottom: 0rem; margin-bottom: -15px; margin-top: -15px; min-height: auto;">
+        <ul>
+            <li style="display: flex; align-items: center; gap: 10px;">
+                <img src="../Images/logo_2.svg" alt="Andre Tutoring Logo" style="width: 50px;">
+                <h3 style="margin: 0;"><a href="../" style="text-decoration: none; color: inherit;">Andre Tutoring</a></h3>
+            </li>
+        </ul>
+
+        <ul style="display: flex; list-style: none; padding: 0; align-items: center;">
+            <li style="margin-right: 1.5rem;"><a href="../">Home</a></li>
+
+            <li style="margin-right: 1.5rem;" class="dropdown">
+                <a href="#" style="text-decoration: none;">Subjects ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../physics/">Physics (HSC)</a></li>
+                    <li><a href="../extension-maths/">Extension Maths</a></li>
+                    <li><a href="../advanced-maths/">Advanced &amp; Standard Maths</a></li>
+                    <li><a href="../junior-maths/">Junior Maths (Yr 7-10)</a></li>
+                </ul>
+            </li>
+
+            <li style="margin-right: 1.5rem;" class="dropdown">
+    <a href="../resources/" style="text-decoration: none;">Resources ▾</a>
+    <ul class="dropdown-menu">
+        <li><a href="../resources/">Resources</a></li>
+        <li><a href="../time-management/">Time Management</a></li>
+        <li><a href="../study-tips/">Study Tips</a></li>
+        <li><a href="../hsc-physics/">HSC Physics</a></li>
+        <li><a href="../mathematics/">Mathematics</a></li>
+    </ul>
+</li>
+            <li><a href="../contact/">Contact &amp; Booking</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="article-container">
+
+    <article class="article-content" style="max-width: 1100px; transform: none !important; transition: none !important;">
+
+        <div class="article-heading">
+            <span class="article-category">Study Advice</span>
+
+            <h1 style="font-family: 'Lora', Georgia, serif; font-size: 2.9rem; font-weight: 700; letter-spacing: -0.04em; color: #102a43;">
+                How to Improve Your Exam Time Management
+            </h1>
+
+            <p>
+                Practical strategies to help you work more efficiently, manage time pressure
+                and maximise your marks in exams.
+            </p>
+        </div>
+
+        <p class="article-intro">
+            Running out of time in an exam can be frustrating, particularly when
+            you understand the material but struggle to complete the paper.
+            Effective time management is a skill in its own right. It involves
+            more than simply working quickly. You need to make sensible decisions
+            about which questions to attempt, how much time to spend on them and
+            when to move on.
+        </p>
+
+        <p>
+            There are several ways to improve your exam technique and become more
+            efficient under time pressure. The following strategies are particularly
+            useful for subjects such as Mathematics and Physics, where questions
+            can vary significantly in difficulty and the amount of time they require.
+        </p>
+
+        <figure class="article-image" style="width: 75%; max-width: 720px; margin: 2rem auto;">
+            <img
+                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1400&q=85"
+                alt="Student studying and working through notes at a desk"
+                loading="lazy"
+                width="1400"
+                height="900"
+                style="width: 100%; max-height: 340px; object-fit: cover;">
+            <figcaption>Effective preparation makes it easier to manage your time during an examination.</figcaption>
+        </figure>
+
+        <h2>1. Make Effective Use of Reading Time</h2>
+
+        <p>
+            Reading time is an opportunity to familiarise yourself with the paper
+            before you begin answering questions. Rather than simply reading each
+            question from beginning to end, use this time to identify which questions
+            are likely to be straightforward and which may require more thought.
+        </p>
+
+        <p>
+            Try to identify questions that involve familiar concepts, multiple
+            steps of working or unfamiliar applications of the material. This
+            gives you an initial idea of how to approach the paper and where
+            you may need to allocate more time.
+        </p>
+
+        <p>
+            Remember that the number of marks allocated to a question does not
+            necessarily reflect how difficult or time-consuming it will be.
+            A question worth only a few marks may require considerable thought,
+            while a higher-mark question may involve a relatively familiar method.
+        </p>
+
+        <h2>2. Allocate Your Time According to Question Length and Difficulty</h2>
+
+        <p>
+            A useful starting point is to allocate time according to the number
+            of marks available for each question. This helps prevent you from
+            spending too long on questions worth relatively few marks while
+            leaving insufficient time for longer responses.
+        </p>
+
+        <p>
+            The following table provides a rough guide for how long different
+            questions might take. These estimates assume that you are working
+            at a reasonable pace and should be adjusted according to the
+            difficulty of the question.
+        </p>
+
+        <div class="time-table-wrapper">
+            <table class="time-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Question value</th>
+                        <th scope="col">Suggested time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1–2 marks</td>
+                        <td>1–2 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>3–4 marks</td>
+                        <td>3–5 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>5–6 marks</td>
+                        <td>6–8 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>7–8 marks</td>
+                        <td>9–12 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>9–10 marks</td>
+                        <td>12–15 minutes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="table-note">
+            These timings are approximate rather than fixed rules. Always consider
+            the complexity of the question and the total time available in your exam.
+        </p>
+
+        <p>
+            It is also important to recognise that HSC Mathematics and Physics
+            papers often become progressively more challenging. Questions towards
+            the beginning of a paper are generally more straightforward, while
+            later questions may require more complex calculations, multiple
+            steps of reasoning or a deeper understanding of the underlying concepts.
+        </p>
+
+        <p>
+            This means you should not necessarily expect to spend the same amount
+            of time on every question, even when they are worth a similar number
+            of marks. Aim to complete earlier questions efficiently so that you
+            have sufficient time to work through the more demanding problems
+            towards the end of the paper.
+        </p>
+
+        <div class="article-callout">
+            <p>
+                <strong>Remember:</strong> Use the marks allocated to a question
+                as a starting point, but adjust your timing according to its
+                difficulty. Avoid rushing through straightforward questions,
+                but do not let a particularly difficult problem consume time
+                that could be spent securing marks elsewhere.
+            </p>
+        </div>
+
+        <h2>3. Know When to Move On</h2>
+
+        <p>
+            One of the most important exam skills is recognising when to stop
+            working on a question. If you are stuck and are no longer making
+            meaningful progress, it is usually better to move on and return to
+            the question later.
+        </p>
+
+        <p>
+            Spending several minutes trying to solve one difficult question can
+            mean losing the opportunity to answer multiple questions that you
+            could have completed. Your goal should be to maximise the marks you
+            obtain across the entire paper, rather than necessarily completing
+            every question in order.
+        </p>
+
+        <p>
+            This is particularly relevant for multiple-choice questions. Some
+            questions may be relatively straightforward in principle but require
+            a lengthy calculation or several steps to reach the answer. If one
+            is taking too long, mark it and move on before returning to it later.
+        </p>
+
+        <div class="article-callout">
+            <p>
+                <strong>A useful rule:</strong> If you are not making progress,
+                do not keep repeating the same approach. Move on, secure marks
+                elsewhere and return with a fresh perspective.
+            </p>
+        </div>
+
+        <h2>4. Practise Under Greater Time Pressure</h2>
+
+        <p>
+            A useful way to improve your time management is to practise completing
+            papers in less time than you would normally be given. I refer to this
+            as pressure training.
+        </p>
+
+        <figure class="article-image" style="width: 75%; max-width: 720px; margin: 2rem auto;">
+            <img
+                src="https://images.unsplash.com/photo-1455390582262-044c61495c5b?auto=format&fit=crop&w=1400&q=85"
+                alt="Notebook and pen being used for written study and practice"
+                loading="lazy"
+                width="1400"
+                height="900"
+                style="width: 100%; max-height: 340px; object-fit: cover;">
+            <figcaption>Timed practice helps build familiarity with working under examination conditions.</figcaption>
+        </figure>
+
+        <p>
+            For example, you could attempt a Mathematics Advanced paper in
+            90 minutes, even if the actual examination allows more time. This
+            forces you to make decisions more quickly, recognise familiar
+            question types and become more efficient with your working.
+        </p>
+
+        <p>
+            Over time, this can make the actual examination feel less pressured.
+            You have already practised working under tighter constraints, so
+            the standard examination time provides a greater margin for
+            checking answers and working through more difficult questions.
+        </p>
+
+        <p>
+            Start with a manageable reduction in time rather than immediately
+            trying to complete a paper at an unrealistic pace. The objective
+            is to improve your efficiency while maintaining accuracy, not to
+            rush through questions and develop careless habits.
+        </p>
+
+        <h2>5. Improve Your Writing and Problem-Solving Efficiency</h2>
+
+        <p>
+            Small improvements in how you write and structure your working
+            can save a considerable amount of time over the course of an exam.
+            Practise writing more quickly while keeping your handwriting
+            sufficiently clear for an examiner to follow.
+        </p>
+
+        <p>
+            In Mathematics, consider whether there is a more efficient way
+            to approach a problem. Different methods can sometimes produce
+            the same result with fewer steps. Avoid unnecessary working,
+            particularly when you are already confident in the method being
+            used.
+        </p>
+
+        <p>
+            In Physics, make sure you are familiar with the equations and
+            concepts you are likely to need. Being able to identify the
+            relevant relationship quickly can reduce the time spent
+            deciding how to approach a problem.
+        </p>
+
+        <p>
+            However, efficiency should not come at the expense of accuracy
+            or clarity. Skipping too many steps or relying on unfamiliar
+            shortcuts can increase the likelihood of mistakes. You should
+            use methods that you can apply consistently and that clearly
+            demonstrate your understanding.
+        </p>
+
+        <h2>Final Thoughts</h2>
+
+        <p>
+            Effective exam time management comes from a combination of
+            preparation, decision-making and practice. Make good use of
+            reading time, allocate time according to the marks and difficulty
+            of each question, recognise when to move on from difficult
+            problems, and practise under tighter time constraints.
+        </p>
+
+        <p>
+            Ultimately, the aim is not simply to finish the paper as quickly
+            as possible. It is to use your available time effectively,
+            maintain accuracy and give yourself the best opportunity to
+            demonstrate what you know.
+        </p>
+
+        <div class="article-footer">
+            <p>
+                <strong>Looking to improve your exam preparation?</strong>
+                Explore my tutoring resources or find out more about
+                Mathematics and Physics tutoring.
+            </p>
+
+            <div class="related-links">
+                <h2>Related Resources</h2>
+                <ul>
+                    <li><a href="../resources/">Browse tutoring resources</a></li>
+                    <li><a href="../physics/">HSC Physics tutoring</a></li>
+                    <li><a href="../advanced-maths/">Mathematics Advanced tutoring</a></li>
+                    <li><a href="../extension-maths/">Mathematics Extension tutoring</a></li>
+                    <li><a href="../contact/">Get in touch</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </article>
+
+</main>
+
+<!-- Footer: original site styling -->
+<footer style="max-width: 1200px; margin: 3rem auto 1.5rem auto; padding: 0 1rem; width: 100%; box-sizing: border-box;">
+
+    <div style="display: flex; justify-content: center; margin-bottom: 1rem; margin-top: -1.7rem;">
+        <a href="#" class="back-to-top-btn" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 700; color: #ffffff; background-color: #0284c7; padding: 0.5rem 1.2rem; border-radius: 20px; text-decoration: none; box-shadow: 0 4px 10px rgba(2, 132, 199, 0.25); transition: all 0.25s ease-in-out;">
+            <span class="arrow-icon" style="font-size: 0.9rem; line-height: 1; display: inline-block;">↑</span> Back to top
+        </a>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 0 0 0.75rem 0;">
+
+    <p style="text-align: center; margin: 0; font-size: 0.85rem; color: #64748b;">
+        © 2026 Andre Tutoring. All rights reserved.
+    </p>
+</footer>
+
+<script>
+    document.querySelector('.back-to-top-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+</body>
+</html>
+

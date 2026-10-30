@@ -390,3 +390,32 @@ footer {
 body {
     padding-bottom: 0 !important;
 }
+
+#about-me {
+    position: relative;
+    isolation: isolate;
+}
+
+#about-me::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../Images/beach.1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: -1;
+}
+
+#about-me.image-loaded::before {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    #about-me::before {
+        background-attachment: scroll;
+    }
+}

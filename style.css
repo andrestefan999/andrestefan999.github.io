@@ -426,3 +426,7 @@ body {
         background-attachment: scroll;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
